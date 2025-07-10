@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/loginbkg"
+    >
+
+    <!-- Toolbar (Action Bar) -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/colorPrimary"
+        android:titleTextColor="#FFFFFF"
+        android:backgroundTint="@color/green"
+        app:title="Add Inventory"
+        app:navigationIcon="@drawable/ic_back_arrow"/>
+
+    <!-- Item Name -->
+    <EditText
+        android:id="@+id/item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Item Name"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:inputType="text" />
+
+    <!-- Item Quantity -->
+    <EditText
+        android:id="@+id/item_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Item Quantity"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:inputType="number" />
+
+    <!-- Item Description -->
+    <EditText
+        android:id="@+id/item_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Item Description"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:inputType="textMultiLine" />
+
+    <!-- Image selection button -->
+    <Button
+        android:id="@+id/select_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Image"
+        android:backgroundTint="@color/green"
+
+        android:layout_marginTop="16dp" />
+
+    <!-- ImageView to display selected image -->
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Item Image" />
+
+    <!-- Add Button to submit the form -->
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Item"
+        android:backgroundTint="@color/green"
+
+        android:layout_marginTop="24dp" />
+
+</LinearLayout>
